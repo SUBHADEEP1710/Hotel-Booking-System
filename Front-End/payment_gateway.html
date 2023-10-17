@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Payment</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-logo">
+                <img src="logo.png" alt="Wanderlust Logo">
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <section class="payment-section">
+            <h2>Payment Details</h2>
+            <form id="payment-form">
+                <div class="input-group">
+                    <label for="card-number">Card Number:</label>
+                    <input type="number" id="card-number" name="card-number" required>
+                </div>
+                <div class="input-group">
+                    <label for="expiry">Expiry Date:</label>
+                    <input type="number" id="expiry" name="expiry" maxlength="4" placeholder="MM/YY" required>
+                </div>
+
+
+                <div class="input-group">
+                    <label for="cvv">CVV:</label>
+                    <input type="password" id="cvv" name="cvv" maxlength="4" pattern="\d{3}" title="CVV must be 3 digits" required>
+                </div>
+                
+
+                <button type="submit">Make Payment</button>
+            </form>
+        </section>
+    </main>
+
+
+
+    <script src="app2.js"></script>
+</body>
+
+</html>

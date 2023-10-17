@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>WanderLust</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-logo">
+                <img src="logo.png" alt="Wanderlust Logo">
+            </div>
+            <div class="header-nav">
+                <h1></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="booking-section">
+            <h2>Plan Your Stay</h2>
+
+            <form id="booking-form" action="hotels.php" method="GET">
+                <div class="input-group">
+                    <label for="location">Location : </label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+                <div class="input-group">
+                    <label for="check-in">Check-In : </label>
+                    <input type="date" id="check-in" name="check-in" required>
+                </div>
+                <div class="input-group">
+                    <label for="check-out">Check-Out : </label>
+                    <input type="date" id="check-out" name="check-out" required>
+                </div>
+                <div class="input-group">
+                    <label for="adults">Adults : </label>
+                    <input type="number" id="adults" name="adults" min="1" required>
+                </div>
+                <div class="input-group">
+                    <label for="children">Children : </label>
+                    <input type="number" id="children" name="children" min="0" required>
+                </div>
+                <button type="submit">Search Hotels</button>
+            </form>
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
